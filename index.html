@@ -47,11 +47,9 @@
 </main>
 <script>
   const catImage = document.getElementById("cat-image");
-
   function loadRandomCat() {
     catImage.src = `https://cataas.com/cat?_=${Date.now()}`;
   }
-
   loadRandomCat();
   setInterval(loadRandomCat, 5000);
 </script>
